@@ -1,0 +1,7 @@
+<div class="card mat-card" id="footer-card">
+    <div class="card-titles">
+        <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">LOGIN</button>
+        <button type="button" class="btn btn-outline-light" (click)="onLogOut() "*ngIf="isLogged" >CERRAR SESIÓN</button>
+        <img src="assets/APLogo.png" id="logoAP" style="float: right; max-width: 100px;">
+    </div>
+    <div>

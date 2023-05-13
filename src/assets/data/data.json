@@ -1,0 +1,125 @@
+{
+  "name": "Diego Rojas Brañez",
+  "backimage": "assets/bg.jpg",
+  "image":"assets/profile.jpg",
+  "position": "Desarrollador web Full Stack Jr",
+  "company": {
+    "name": "Teclab",
+    "img": "assets/teclab.jpg",
+    "url": "#"
+  },
+  "school":{
+    "name": "Santex",
+    "img": "assets/santex.jpg",
+    "url": "#"
+  },
+  "ubication": "Buenos Aires (Argentina) ",
+  "about": "Tecnico superior en programación con amplia experiencia en el mundo IT, hace más de 5 años trabajo en la coordinación de equipos de trabajo.",
+  "experience": [{
+    "position": "Coordinador de técnicos de campo",
+    "company": "Cronon Tecnologia SRL",
+    "img": "assets/cronon.jpg",
+    "mode": "Jornada Completa",
+    "start": "Enero 2022",
+    "end": "Actualidad"
+    },
+    {
+    "position": "Coordinador de Sistemas y Field Services",
+    "company": "Techcom SRL",
+    "img": "assets/techcom.jpg",
+    "mode": "Jornada Completa",
+    "start": "Julio 2018",
+    "end": "Octubre 2021"
+  }],
+  "education": [{
+    "school": "Teclab",
+    "title": "Tecnicatura",
+    "img": "assets/teclab.jpg",
+    "career": "Tecnicatura en Programación",
+    "start": "2021",
+    "end": "2022"
+  }],
+  "aptitudes": [{
+    "name": "Ingles",
+    "progress": "Nivel 3",
+    "confirms": 1,
+    "confirmsNames": "Liceo Cultural Britanico"
+  }],
+  "archivements": [{
+    "name": "Argentina Programa",
+    "career": "curso #Yoprogramo y #Seprogramar"
+  },
+  {
+    "name": "OpenBootcamp",
+    "career": "Bootcamp FullStack"
+  }]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

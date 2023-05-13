@@ -1,0 +1,28 @@
+<div class="card mat-card">
+  <div id="experience">
+    <div class="card-titles">
+      <h2>Experiencia</h2>
+      <div class="btn-edit">
+        <a href="#" class="btn-right" routerLink="/nuevaexp" *ngIf="isLogged"><i class="fa fa-plus"></i></a>
+      </div>
+    </div>
+   <div>
+      <ul class="items-list">
+        <li *ngFor="let Experiencia of expe">
+          
+          <div class="data-container">
+                <div class="list-info">
+                  <div>
+                    <h3>{{Experiencia.nombreE}} 
+                      <a href="#" class="smaller-font" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"><i class="fa fa-pen">&nbsp;</i></a>
+                      <a href="#" class="smaller-font" (click)="delete(Experiencia.id)" *ngIf="isLogged"><i class="fa fa-trash" style='color: red'></i></a>
+                    </h3>
+                    <p>{{Experiencia.descripcionE}}</p>
+                  </div>
+                </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
