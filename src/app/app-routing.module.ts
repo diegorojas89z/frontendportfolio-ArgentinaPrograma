@@ -6,6 +6,9 @@ import { NewExperienciaComponent } from './componentes/expeduc/new-experiencia.c
 import { EditExperienciaComponent } from './componentes/expeduc/edit-experiencia.component';
 import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
 import { EditeducacionComponent } from './componentes/educacion/editeducacion.component';
+import { NewcursosComponent } from './componentes/merits/newcursos.component';
+import { EditcursosComponent } from './componentes/merits/editcursos.component';
+import { EditAcercaDeComponent } from './componentes/header/edit-acerca-de.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -13,7 +16,10 @@ const routes: Routes = [
   {path:'nuevaexp', component: NewExperienciaComponent},
   {path:'editexp/:id', component: EditExperienciaComponent},
   {path:'nuevaedu', component:NeweducacionComponent},
-  {path:'editedu/:id', component:EditeducacionComponent}
+  {path:'editedu/:id', component:EditeducacionComponent},
+  {path:'nuevocurso', component:NewcursosComponent},
+  {path:'editcurso/:id', component:EditcursosComponent},
+  {path:'editacercade/:id', component:EditAcercaDeComponent}
 ];
 
 @NgModule({

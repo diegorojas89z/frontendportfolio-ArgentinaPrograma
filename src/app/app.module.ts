@@ -3,9 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
-import { AboutComponent } from './componentes/about/about.component';
 import { ExpeducComponent } from './componentes/expeduc/expeduc.component';
-import { AptitudeComponent } from './componentes/aptitude/aptitude.component';
 import { MeritsComponent } from './componentes/merits/merits.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './componentes/home/home.component';
@@ -18,6 +16,12 @@ import { EditExperienciaComponent } from './componentes/expeduc/edit-experiencia
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
 import { EditeducacionComponent } from './componentes/educacion/editeducacion.component';
+import { EditcursosComponent } from './componentes/merits/editcursos.component';
+import { NewcursosComponent } from './componentes/merits/newcursos.component';
+import { EditAcercaDeComponent } from './componentes/header/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 @Injectable({
@@ -27,9 +31,7 @@ import { EditeducacionComponent } from './componentes/educacion/editeducacion.co
   declarations: [
     AppComponent,
     HeaderComponent,
-    AboutComponent,
     ExpeducComponent,
-    AptitudeComponent,
     MeritsComponent,
     HomeComponent,
     LoginComponent,
@@ -38,13 +40,18 @@ import { EditeducacionComponent } from './componentes/educacion/editeducacion.co
     EditExperienciaComponent,
     EducacionComponent,
     NeweducacionComponent,
-    EditeducacionComponent
+    EditeducacionComponent,
+    EditcursosComponent,
+    NewcursosComponent,
+    EditAcercaDeComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
   ],
   providers: [
     interceptorProvider

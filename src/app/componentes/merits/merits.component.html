@@ -1,21 +1,29 @@
 <div class="card mat-card">
-  <div class="card-titles">
-      <h2>Logros</h2>
-      <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-  </div>
-  <div>
-    <ul class="items-list">
-      <!--<li *ngFor="let Experiencia of expe"> -->
-        <li>
-        <div class="data-container">
-              <div class="list-info">
-                <div>
-                  <h3>Argentina Programa</h3>
-                  <p>curso #Yoprogramo y #Seprogramar</p>
+  <div id="experience">
+    <div class="card-titles">
+      <h2>Cursos y Proyectos</h2>
+      <div class="btn-edit">
+        <a href="#" class="btn-right" routerLink="/nuevocurso" *ngIf="isLogged"><i class="fa fa-plus"></i></a>
+      </div>
+    </div>
+   <div>
+      <ul class="items-list">
+        <li *ngFor="let Cursos of cursos">
+          
+          <div class="data-container">
+                <div class="list-info">
+                  <div>
+                    <h3>{{Cursos.nombreE}} 
+                      <a href="#" class="smaller-font" routerLink="/editcurso/{{Cursos.id}}" *ngIf="isLogged"><i class="fa fa-pen">&nbsp;</i></a>
+                      <a href="#" class="smaller-font" (click)="delete(Cursos.id)" *ngIf="isLogged"><i class="fa fa-trash" style='color: red'></i></a>
+                    </h3>
+                    <p>{{Cursos.descripcionE}}</p>
+                  </div>
                 </div>
-              </div>
           </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
+
